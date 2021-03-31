@@ -1,0 +1,166 @@
+<?= $this->extend('layout/template'); ?>
+
+<?= $this->section('content'); ?>
+<div class="tugas">
+    <div class="header-text-tugas">
+        <h2>Layanan / Pengajuan Permohonan Informasi</h2>
+    </div>
+</div>
+
+
+<div class="container justify-content-center">
+    <div class="card-header" style="font-size: 18px;">
+        Form Pengajuan
+    </div>
+    <div class="pengajuan" style="margin: 50px;padding: 20px;;box-shadow: 0 0.7rem 1rem 0.7rem rgba(170, 170, 170, 0.5);">
+        <form style="font-family:poppins;font-size:16px;">
+            <div class="form-group">
+                <label for="formGroupExampleInput" style="font-weight:bold;">Nama Lengkap</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama Lengkap Sesuai KTP atau Kartu Pelajar">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">No.KTP</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nomor KTP atau Kartu Pelajar">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Scan/Foto KTP</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Jenis Kelamin</label>
+                <select class="custom-select">
+                    <option selected>Pilih Jenis Kelamin</option>
+                    <option value="1">Laki-laki</option>
+                    <option value="2">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Pekerjaan</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="PNS / Karyawan / Lainya...">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Pilih Tempat Lahir</label>
+                <select class="custom-select" size="3" style="font-weight:600;">
+                    <option selected>Pilih Tempat Lahir</option>
+                    <option value="1">Sumatera</option>
+                    <option value="2">Jawa</option>
+                    <option value="3">Kalimantan</option>
+                    <option value="4">Bali</option>
+                    <option value="5">Sulawesi</option>
+                    <option value="6">Papua</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Alamat</label>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <select class="custom-select">
+                                <option selected>Pilih Provinsi</option>
+                                <option value="1">Laki-laki</option>
+                                <option value="2">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="custom-select">
+                                <option selected>Pilih Kota/Kabupaten</option>
+                                <option value="1">Laki-laki</option>
+                                <option value="2">Perempuan</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <label for="formGroupExampleInput2"></label>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Kecamatan">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Desa / Kelurahan">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Alamat Lengkap">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput" style="font-weight:bold;">No Telepon / Hp</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nomor Telepon atau HP aktif">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput" style="font-weight:bold;">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput" style="font-weight:bold;">Judul Informasi</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Masukan judul informasi">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput" style="font-weight:bold;">Tujuan</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tujuan Mendapatkan Informasi">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Cara Perolehan </label>
+                <select class="custom-select">
+                    <option selected>--Pilih Cara Perolehan--</option>
+                    <option value="1">Mendapatkan Salinan Softcopy</option>
+                    <option value="2">Mendapatkan Salinan Hardcopy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2" style="font-weight:bold;">Format Informasi</label>
+                <select class="custom-select">
+                    <option selected>--Pilih Format Informasi--</option>
+                    <option value="1">Download di Internet</option>
+                    <option value="2">Ambil Langsung</option>
+                    <option value="3">Kurir</option>
+                    <option value="4">Pos</option>
+                    <option value="5">Faxmile</option>
+                    <option value="6">Email</option>
+                </select>
+            </div>
+
+            <div class="form-group bg-success" style="padding: 10px; border-radius:10px">
+                <p style="font-weight: bold;">* Isilah dengan benar untuk verifikasi permohonan</p>
+            </div>
+            <div class="card">
+                <div class="card-body" style="color:#222;font-family:poppins; background-color:#f0f0f0;">
+                    <h6 class="card-title">Syarat dan Ketentuan</h6>
+                    <p class="card-text" style="font-size: 14px;">1. Dalam rangka kejelasan dan kepastian status permohonan informasi (dapat diberikan; tidak dapat diberikan; dan atau ditolak) maka sistem permohonan secara online melalui aplikasi ini diatur dengan ketentuan 1 (satu) kali pengajuan permohonan informasi publik hanya diperkenankan untuk 1 (satu) jenis informasi publik.</br>
+
+                        </br>Dalam hal pengajuan permohonan informasi dimaksudkan untuk beberapa informasi sekaligus (dua atau tiga atau lebih ) maka permohonan harus diinput/diajukan satu persatu.</br>
+
+                        </br>Pengajuan secara sekaligus dapat dilakukan melalui mekanisme permohonan secara langsung atau offline dengan datang ke Ruang Pelayanan Informasi dan Dokumentasi (RPID)PPID Kabupaten Pemalang Jl. Gatot Subroto No. 31 b (Komplek Gedung Radio Swara Widuri).</br>
+
+                        </br>2. PPID berhak melakukan verifikasi identitas pemohon melalui telepon untuk memastikan kesesuaian identitas.</p>
+
+                    <div class="form-check" style="font-size: 14px; font-weight:600;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Saya menyetujui syarat dan ketentuan ini</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buat-permohonan ">
+                <a class="btn btn permohonan " style=" border-radius:10px;color:#fff" href="#">Buat Permohonan</a>
+            </div>
+        </form>
+
+
+    </div>
+
+
+
+
+
+</div>
+
+<?= $this->endSection(); ?>
